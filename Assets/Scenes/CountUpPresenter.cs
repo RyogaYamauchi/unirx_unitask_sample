@@ -1,4 +1,5 @@
-﻿using UniRx;
+﻿using Cysharp.Threading.Tasks;
+using UniRx;
 
 namespace Sample
 {
@@ -12,7 +13,7 @@ namespace Sample
             _model = new CountUpModel();
         }
 
-        public void Initialize()
+        public async void Initialize()
         {
             Bind();
         }
